@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantbot-ai"
+version = "0.1.0"
+description = "Modular reinforcement learning trading system for training and evaluating agents on historical market data."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Quant Bot AI" }
+]
+dependencies = [
+  "gymnasium>=0.29,<1.1",
+  "matplotlib>=3.8",
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "yfinance>=0.2.54"
+]
+
+[project.scripts]
+quantbot-train = "quantbot_ai.main:main"
+
+[tool.setuptools.packages.find]
+include = ["quantbot_ai*"]

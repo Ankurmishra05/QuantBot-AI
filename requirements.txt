@@ -1,0 +1,5 @@
+gymnasium>=0.29,<1.1
+matplotlib>=3.8
+numpy>=1.26
+pandas>=2.2
+yfinance>=0.2.54
